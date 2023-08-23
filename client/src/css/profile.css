@@ -1,0 +1,101 @@
+#cate {
+    padding: 50px;
+    text-align: center;
+  }
+
+.ml {
+    color: var(--text-color);
+    font-size: 19px;
+  }
+#cate h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+  }
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+/* .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+} */
+
+
+.box-container .box h3{
+    color:#444;
+    font-size: 22px;
+}
+
+.box-container .box p{
+    color:#777;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.box-container .box .btn{
+    display: inline-block;
+    color:#fff;
+    /* padding: 8px 25px; */
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.box-container .box .btn:hover{
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+.box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+    height: 265px;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    transition: transform 0.3s;
+    border-radius: 25px;
+    text-align: center;
+  }
+.box::before {
+    background: linear-gradient(
+      45deg, transparent 2%, rgb(103, 118, 255) 50%, transparent 99%
+    ) ;
+    content: '';
+    inset: 0px;
+    position: absolute;
+    z-index: 0;
+    border-radius: inherit;
+    box-shadow: 10px 10px 10px rgb(245,246,255);
+  }
+  .category-content {  
+    padding: 20px;
+    background-color: #fff;
+    border-radius: inherit;
+    inset: 1px;
+    position: absolute;
+  }
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
